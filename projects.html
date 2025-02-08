@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alvin Zhu's Projects">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Projects | Alvin's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header>
+        <h1><strong id="title">Alvin's Portfolio Website</strong></h1>
+        <p>Website for my resume</p>
+    </header>
+
+    <div id="container">
+        <nav>
+            <ul id="directory">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h3 id="main-title">Projects</h3>
+            <div id="main-text2">
+
+                <h4>🧠 LeetCode AI Test Case Generator | React/Next.js, Django, PostgreSQL, Selenium</h4>
+                <p><strong>Date:</strong> July 2024</p>
+                <ul>
+                    <li>Developed a full-stack web application using React/Next.js for the frontend and Django for the backend.</li>
+                    <li>Designed to generate advanced test cases for LeetCode-style coding problems using a fine-tuned LLM.</li>
+                    <li>Implemented a PostgreSQL database and RESTful API to manage data and communicate with the AI model.</li>
+                    <li>Integrated web scraping with Selenium and ChromeDriver to gather LeetCode problem datasets.</li>
+                </ul>
+                <br>
+
+                <h4>📜 TaleCraft | Flask, HTML/CSS/JS, OpenAI API, Docker, Bootstrap</h4>
+                <p><strong>Date:</strong> November 2023</p>
+                <ul>
+                    <li>Developed a full-stack, retro-themed interactive storytelling game using generative AI.</li>
+                    <li>Built the frontend using HTML, CSS, JavaScript, and Bootstrap for responsive UI.</li>
+                    <li>Created a Flask-based backend with RESTful API endpoints to handle user requests.</li>
+                    <li>Integrated OpenAI API for dynamic story and image generation.</li>
+                </ul>
+                <br>
+
+                <h4>🔥 Spark Bytes Project | PostgreSQL, Prisma, Express.js, Next.js</h4>
+                <p><strong>Date:</strong> December 2023</p>
+                <ul>
+                    <li>Developed a platform for BU faculty and students to post food-related events to reduce waste.</li>
+                    <li>Implemented user authentication with JWT and bcrypt for secure login and registration.</li>
+                    <li>Built a dynamic event display using Prisma for efficient database operations.</li>
+                    <li>Developed a responsive frontend using Next.js and React.js, containerized with Docker.</li>
+                </ul>
+
+            </div>
+
+            <div class="calculator-section">
+                <h4>JavaScript Calculator Project</h4>
+                <div class="calculator-container">
+                    <div class="input-group">
+                        <div class="input-field">
+                            <label for="num1">First:</label>
+                            <input type="number" id="num1" placeholder="">
+                        </div>
+                        <div class="input-field">
+                            <label for="num2">Second:</label>
+                            <input type="number" id="num2" placeholder="">
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="calculate('add')">+</button>
+                        <button onclick="calculate('subtract')">-</button>
+                        <button onclick="calculate('multiply')">*</button>
+                        <button onclick="calculate('divide')">/</button>
+                        <button onclick="power()">**</button>
+                        <button onclick="clearCalc()">Clear</button>
+                    </div>
+                    <div class="output-container">
+                        <p id="output">Result will appear here</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>All Rights Reserved By Alvin Zhu <a href="#">Credits</a> &copy;</p>
+    </footer>
+
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
