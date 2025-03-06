@@ -42,17 +42,20 @@ nav{
 #directory{
     list-style: none; 
 }
-#directory li a{
+
+#directory li a {
     display: flex; 
     font-size: calc(2px + 1.5vw);
-    text-decoration : none; 
-    padding :10vh 13vh;
-    color : white; 
-    justify-content : center; 
-    align-items : center;
+    text-decoration: none; 
+    padding: 10vh 15vw; 
+    color: white; 
+    justify-content: center; 
+    align-items: center;
 }
 
-
+#selfDescription {
+    font-size : 40px; 
+}
 img{
     max-width: 100%;
     
@@ -137,70 +140,90 @@ main{
     }
 }
 
-
 @media screen and (max-width: 750px) {
+
+    #main-text {
+        margin-top: 3vh;
+        font-size: calc(1.5rem + 1vw);
+        text-align: center;
+    }
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .page-wrapper {
+        width: 100%;
+        min-height: 100vh;
+    }
 
     #container {
         flex-direction: column;  
-        width : 100%; 
-        min-height:100vh; 
+        width: 100%; 
+        min-height: 100vh;
+        padding: 0 15px;
     }
-
+    
     nav {
         max-width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
     }
     
     #directory {
         list-style: none; 
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        padding: 0; 
+        margin: 10px 0; 
         width: 100%;
     }
     
     #directory li {
         text-align: center;
+        margin: 5px 10px; 
     }
     
     #directory li a {
-        padding: 0.7vh;
+        padding: 8px 12px;
         font-size: calc(1rem + 0.3vw); 
+        display: block; 
+        text-decoration: none;
+    }
+    
+    main {
+        max-width: 100%;
+        padding: 0 15px; 
+    }
+    
+    header {
+        text-align: center;
+        padding: 0 15px; 
     }
 
-    #main-text{
-        margin-top : 3vh;
-        font-size: calc(2px + 3vw);
+    #main-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
-    main{
-        max-width : 100%; 
+    #self-image {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 
-    header{
-        text-align : center;
+    footer {
+        text-align: center;
+        padding: 10px 15px;
+        width: 100%;
     }
-
-    #main-text3 li {
-        margin-left : 3em; 
-        margin-bottom: 10vh; 
-        font-size: calc(2px + 3vw);  
-    }
-
-    #main-text{
-        margin-top : 3vh;
-        font-size: calc(2px + 4.25vw);
-    }
-
-    #main-text5 ul li{
-        margin-left : 2vh;
-        margin-bottom : 5vh;
-        font-size: calc(2px + 3vw);
-    }
-
 }
-
-
 
 
 
